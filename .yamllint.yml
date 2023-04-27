@@ -1,0 +1,13 @@
+# https://yamllint.readthedocs.io/en/stable/index.html
+
+extends: default
+
+rules:
+  document-start: disable
+  indentation:
+    spaces: 2
+  line-length: disable
+  truthy:
+    allowed-values: ['true', 'True', 'false', 'False']
+    check-keys: false
+    level: error
