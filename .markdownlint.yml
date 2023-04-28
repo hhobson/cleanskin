@@ -7,3 +7,6 @@ MD003:
 
 # MD013 line-length - Line length
 MD013: false
+
+# MD024 no-duplicate-heading/no-duplicate-header - Multiple headings with the same content
+MD024: false

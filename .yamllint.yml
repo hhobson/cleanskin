@@ -1,6 +1,10 @@
 # https://yamllint.readthedocs.io/en/stable/index.html
-
+---
 extends: default
+
+# ignore: |
+#   /this/specific/file.yaml
+ignore-from-file: .gitignore
 
 rules:
   document-start: disable
