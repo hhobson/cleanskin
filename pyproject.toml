@@ -2,5 +2,13 @@
 line-length = 110
 target-version = ["py38", "py39", "py310"]
 
-[tool.pycln]
-all = true
+[tool.ruff]
+line-length = 110
+extend-select = [
+    "I",  # isort, (auto-fixable)
+    "ISC",  # Implicit String concatenation
+    "RUF100",  # Unused noqa (auto-fixable)
+]
+ignore = [
+    "E501",  # line too long handled by black
+]
