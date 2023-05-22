@@ -47,6 +47,17 @@ repos:
     hooks:
       - id: black-jupyter
         name: Run black Jupyter Python formatter
+  - repo: https://github.com/adamchainz/blacken-docs
+    rev: 1.13.0
+    hooks:
+      - id: blacken-docs
+        args:
+          - --line-length=110
+          - --target-version=py38
+          - --target-version=py39
+          - --target-version=py310
+        additional_dependencies:
+          - black==23.3.0
   - repo: https://github.com/adrienverge/yamllint.git
     rev: v1.31.0
     hooks:
