@@ -1,16 +1,11 @@
 [project.optional-dependencies]
 dev = [
-    "black[jupyter]",
     "pre-commit",
     "ruff",
 ]
 test = [
     "pytest"
 ]
-
-[tool.black]
-line-length = 110
-target-version = ["py38", "py39", "py310"]
 
 [tool.ruff]
 line-length = 110
@@ -22,3 +17,8 @@ extend-select = [
 ignore = [
     "E501",  # line too long handled by black
 ]
+
+[tool.ruff.format]
+line-ending = "lf"
+docstring-code-format = true
+docstring-code-line-length = 60
