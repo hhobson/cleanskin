@@ -4,7 +4,9 @@ dev = [
     "ruff",
 ]
 test = [
-    "pytest"
+    "pytest",
+    "pytest-instafail",
+    "pytest-randomly", 
 ]
 
 [tool.ruff]
