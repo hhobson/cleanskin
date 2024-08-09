@@ -1,6 +1,5 @@
 [project.optional-dependencies]
 dev = [
-    "black[jupyter]",
     "pre-commit",
     "ruff",
 ]
