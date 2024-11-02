@@ -1,3 +1,11 @@
+[project]
+name = "GREAT-NAME"
+description = "SOMETHING SHORT AND WHITTY"
+version = "0.0.0"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = []
+
 [project.optional-dependencies]
 dev = [
     "pre-commit",
@@ -6,8 +14,12 @@ dev = [
 test = [
     "pytest",
     "pytest-instafail",
-    "pytest-randomly", 
+    "pytest-randomly",
 ]
+
+[tool.uv]
+package = false
+default-groups = ["dev", "test"]
 
 [tool.ruff]
 line-length = 110
@@ -24,3 +36,8 @@ ignore = [
 line-ending = "lf"
 docstring-code-format = true
 docstring-code-line-length = 60
+
+# For packages, uncomment and change tool.uv.package to true
+# [build-system]
+# requires = ["setuptools", "setuptools-scm"]
+# build-backend = "setuptools.build_meta"
