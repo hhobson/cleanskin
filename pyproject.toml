@@ -8,10 +8,12 @@ dependencies = []
 
 [dependency-groups]
 dev = [
+    "ipykernel",
     "pre-commit",
     "ruff",
 ]
 test = [
+    "coverage",
     "pytest",
     "pytest-instafail",
     "pytest-randomly",
