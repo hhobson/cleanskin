@@ -45,8 +45,8 @@ repos:
     rev: v0.15.15
     hooks:
       # Ruff Linter
-      - id: ruff
-        args: [--fix, --exit-non-zero-on-fix]
+      - id: ruff-check
+        args: [--fix]
         types_or: [python, pyi, jupyter]
       # Ruff Formatter
       - id: ruff-format
